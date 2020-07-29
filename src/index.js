@@ -12,8 +12,8 @@ import Login from './pages/Login';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path='/home' component={Home} exact />
-      <Route path='/' component={Login}/>
+      <Route path='/' component={Home} exact />
+      <Route path='/login' component={Login}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
