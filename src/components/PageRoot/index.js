@@ -10,7 +10,6 @@ function PageRoot({ children }) {
       <Main>
         {children}
       </Main>
-      <Footer />
     </>
   );
 }
