@@ -7,15 +7,16 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Login from './pages/Login';
+import { CookiesProvider } from 'react-cookie';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path='/' component={Home} exact />
-      <Route path='/login' component={Login}/>
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById('root')
+  <CookiesProvider>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={Home} exact />
+      </Switch>
+    </BrowserRouter>
+  </CookiesProvider>,
+    document.getElementById('root')
 );
 

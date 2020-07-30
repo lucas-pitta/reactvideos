@@ -29,3 +29,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+p, label {
+  color: var(--white);
+}
