@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { GoogleLogin } from 'react-google-login';
 import { withCookies } from 'react-cookie';
 import AuthenticatedArea from '../AuthenticatedArea';
+import { GoogleLoginBtn } from './styles';
 
 const CLIENT_ID = '193354124028-k2rd17heq22o4ngf03tg1lfhlj84sf1q.apps.googleusercontent.com';
 
@@ -44,7 +44,7 @@ class Login extends Component {
         { this.state.isLogined ?
           <AuthenticatedArea/>
           :
-          <GoogleLogin
+          <GoogleLoginBtn
             clientId={ CLIENT_ID }
             buttonText='Entrar'
             onSuccess={ this.login }
